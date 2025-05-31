@@ -4,6 +4,9 @@ const elements = {
   collectionBox: document.querySelector('.collection-box'),
   collectionArrow: document.querySelector('.collection-arrow'),
   toys: [],
+  contextmenu: document.addEventListener('contextmenu', e => e.preventDefault()),
+  touchstart: document.addEventListener('touchstart', e => e.preventDefault(), { passive: false }),
+  selectstart: document.addEventListener('selectstart', e => e.preventDefault()),
 }
 
 const settings = {
